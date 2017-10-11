@@ -1,0 +1,53 @@
+<div class="col m12" ng-show='vm.visualizacaoPainel == "DADOS"'>
+    <div class="bar-title3 font-title truncate">MODALIDADES</div>
+        
+        <div class="pd30 col s12 m12">
+            <div class="mg-l-10 card-height4 card horizontal z-depth-5">
+                <table class="table striped responsive-table">
+                    <thead>
+                        <tr>
+                            <th rowspan="2">MODALIDADE</th>
+                            <th colspan="2">MATRÍCULA</th>
+                            <th colspan="2">PRODUÇÃO</th>
+                        </tr>
+                        <tr>
+                            <th>EXEC</th>
+                            <th>META</th>
+                            <th>EXEC</th>
+                            <th>META</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat='obj in vm.producaoModalidade | limitTo:5'>
+                            <td width="58%" class="truncate">{{obj.modalidade}}</td>
+                            <td class="text-right">{{obj.matriExec | number:0}}</td>
+                            <td class="text-right">{{obj.matriPlan | number:0}}</td>
+                            <td class="text-right">{{obj.pahExec | number:0}}</td>
+                            <td class="text-right">{{obj.pahPlan | number:0}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>    
+    </div>
+</div>
+
+<div class="col m12" ng-show='vm.visualizacaoPainel == "UNIGEST"'>
+    <img src="img/unigest_missao.jpg" height="1080" width="1920">
+</div>
+
+<div class="col m12" ng-show='vm.visualizacaoPainel == "UNIGEST_POLITICA"'>
+    <img src="img/unigest_politica.jpg" height="1080" width="1920">
+</div>
+
+<div class="col m12" ng-show='vm.visualizacaoPainel == "SENAIMT"'>
+    <img src="img/senaimt.jpg" height="1080" width="1920">
+</div>
+
+<div class="col m12" ng-show='vm.visualizacaoPainel == "DUBAI"'>
+    <img src="img/uniep_dubai3.jpg" height="1080" width="1920">
+</div>
+
+<div class="col m12" ng-show='vm.visualizacaoPainel == "MERCADO"'>
+    <img src="img/unimercado_03.png" height="1080" width="1920">
+</div>

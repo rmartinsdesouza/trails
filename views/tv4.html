@@ -1,0 +1,102 @@
+<div class="col m12" ng-show='vm.visualizacaoPainel == "DADOS"'>
+    <div class="bar-title1 font-title truncate">BRASIL MAIS PRODUTIVO</div>
+        
+        <div class="pd30 col s12 m12">
+            <div class="mg-l-10 card-height4 card horizontal z-depth-5">
+                
+                <div class="card-image">
+                    <img src="img/brasil.jpg" width="249" height="795">
+                </div>
+                
+                <div class="card-stacked">
+                    <div class="card-content custom2">
+
+                        <div class="col m12 bar-bottom2">                            
+                            <div class="col m3">
+                                <p class="label145 text-center" ng-bind='vm.resultado.aceitos.length | number:0'>0</p>
+                                <h4 class="custom text-center">ACEITOS</h4>
+                            </div>
+
+                            <div class="col m1">
+                                <p class="label145 text-center">+</p>
+                                <h4 class="custom text-center"></h4>
+                            </div>
+                            
+                            <div class="col m3">
+                                <p class="label145 text-center" ng-bind='vm.resultado.concluidos.length | number:0'>0</p>
+                                <h4 class="custom text-center">CONCLUÍDOS</h4>
+                            </div>
+
+                            <div class="col m1">
+                                <p class="label145 text-center">=</p>
+                                <h4 class="custom text-center"></h4>
+                            </div>
+
+                            <div class="col m4">
+                                <p class="label145 text-center" ng-bind='vm.resultado.concluidos.length + vm.resultado.aceitos.length | number:0'>0</p>
+                                <h4 class="custom text-center">ATENDIMENTOS</h4>
+                            </div>
+                        </div>
+
+
+                        <div class="col m12 bar-bottom2">                            
+                            <div class="col m6">
+                                <p class="label145 text-center" ng-bind='vm.phhContratada | number:0'>0</p>
+                                <h4 class="custom text-center">PHH CONTRATADA</h4>
+                            </div>
+
+                            <div class="col m6 bar-left">
+                                <p class="label145 text-center" ng-bind='vm.phhExecutada | number:0'>0</p>
+                                <h4 class="custom text-center">PHH REALIZADA</h4>
+                            </div>
+
+                        </div>
+
+
+                        <div class="col m12">                            
+                            <div class="col m6 pd10-0">
+                                <p class="label3 text-center" ng-bind='vm.receitaContratada'>0</p>
+                                <h4 class="custom text-center">RECEITA CONTRATADA</h4>
+                            </div>
+
+                            <div class="col m6 pd10-0 bar-left">
+                                <p class="label3 text-center" ng-bind='vm.receitaExecutada'>0</p>
+                                <h4 class="custom text-center">RECEITA REALIZADA</h4>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>    
+    </div>
+</div>
+
+<div class="col m12" ng-show='vm.visualizacaoPainel == "UNIGEST"'>
+    <img src="img/unigest_principios.jpg" height="1080" width="1920">
+</div>
+
+<div class="col m12" ng-show='vm.visualizacaoPainel == "UNIGEST_POLITICA"'>
+    <img src="img/unigest_politica2.jpg" height="1080" width="1920">
+</div>
+
+<div class="col m12" ng-show='vm.visualizacaoPainel == "SENAIMT"'>
+    <img src="img/senaimt.jpg" height="1080" width="1920">
+</div>
+
+<div class="col m12" ng-show='vm.visualizacaoPainel == "DUBAI"'>
+    <img src="img/uniep_dubai4.jpg" height="1080" width="1920">
+</div>
+
+<div class="col m12" ng-show='vm.visualizacaoPainel == "MERCADO"'>
+    <img src="img/unimercado_04.png" height="1080" width="1920">
+</div>
+
+
+<div class="col m12" ng-show='vm.visualizacaoPainel == "MERCADO"'>
+    <img src="img/unimercado_04.png" height="1080" width="1920">
+</div>

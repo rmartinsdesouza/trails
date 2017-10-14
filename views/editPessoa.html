@@ -1,0 +1,14 @@
+    <div class="row">
+
+            <div class='col-md-12'>
+                <input type="text" ng-model='vm.form.pessoa.CODIGO' placeholder="Digite o código">
+                <input type="text" ng-model='vm.form.pessoa.NOME' placeholder="Digite o nome completo">
+                <input type="text" ng-model='vm.form.pessoa.CPF' placeholder="Digite o cpf">
+                <input type="text" ng-model='vm.form.pessoa.DATA_NASCIMENTO' placeholder="Digite o DATA_NASCIMENTO">
+                <input type="text" ng-model='vm.form.pessoa.LOGIN_CODIGO' placeholder="Digite o LOGIN_CODIGO">
+            
+                <button class="btn btn-info" ng-click='vm.savePessoa(vm.form.pessoa)'>Salvar</button>
+                <button class="btn btn-danger" ng-click='vm.deletePessoa(vm.form.pessoa)'>Deletar</button>
+            </div>
+
+    </div>

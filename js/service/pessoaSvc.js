@@ -12,20 +12,16 @@
 		var svc = this;  
 		
 		svc.getListPessoa = function() {
+
 			return $http.get(utilService.getUrlDAO('api/pessoa'));
+
 		};
 
 
 		svc.savePessoa = function(data) {
 
-/*			var config = {
-                headers : {
-                    'Content-Type': 'text/html;'
-                    'Content-Type': 'application/json;charset=utf-8;'
-                }
-            }*/
-
 			return $http.post(utilService.getUrlDAO('api/pessoa'), data);
+
 		};
 
 		svc.deletePessoa = function(id) {

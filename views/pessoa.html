@@ -1,0 +1,24 @@
+<!-- <div ng-controller="pessoaCtrl as vm"> -->
+    <div class='col-md-12'>
+        <table class="table table-condensed">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nome</th>
+                    <th>CPF</th>
+                    <th>DATA_NASCIMENTO</th>
+                    <th>LOGIN_CODIGO</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class='cursor-pointer' ng-repeat='item in vm.listPessoa' ng-click='vm.getItemPessoa(item)'>
+                    <td>{{item.CODIGO}}</td>
+                    <td>{{item.NOME}}</td>
+                    <td>{{item.CPF}}</td>
+                    <td>{{item.DATA_NASCIMENTO}}</td>
+                    <td>{{item.LOGIN_CODIGO}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+<!-- </div> -->

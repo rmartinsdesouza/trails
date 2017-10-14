@@ -3,7 +3,7 @@
 	
 	$host_sige = "10.52.28.100\instance_high"; //Host SIGE interno
 	$user_sige = "senai"; //usuario do mysql
-	$pass_sige = "S3n4!2015"; //senha do mysql
+	$pass_sige = ""; //senha do mysql
 	$base_sige = "SIGE_MT"; //nome do bando de dados
 	
 

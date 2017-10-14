@@ -48,7 +48,7 @@
 		}
 
 		vm.deletePessoa = function(item){
-			// console.log(item);
+			if(confirm("Tem certeza que quer apagar a pessoa\n CÓDIGO: "+ item.CODIGO  + "\n NOME: " + item.NOME)==true)
 			pessoaSvc.deletePessoa(item.CODIGO);
 
 		}

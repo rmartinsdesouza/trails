@@ -17,6 +17,14 @@
 
 
 		svc.savePessoa = function(data) {
+
+/*			var config = {
+                headers : {
+                    'Content-Type': 'text/html;'
+                    'Content-Type': 'application/json;charset=utf-8;'
+                }
+            }*/
+
 			return $http.post(utilService.getUrlDAO('api/pessoa'), data);
 		};
 
@@ -24,12 +32,17 @@
 
 			var config = {
                 headers : {
-                    'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8;'
+                    'Content-Type': 'text/html;charset=utf-8;'
                 }
             }
+			
+			return $http.delete(utilService.getUrlDAO('api/pessoa/delete/')+ id, config)
+			.then(function (sucess){
 
-			console.log(id)
-			return $http.delete(utilService.getUrlDAO('api/pessoa/delete/')+ id, config);
+  			},function (error){
+ 
+   			});
+
 		};
 		      
 

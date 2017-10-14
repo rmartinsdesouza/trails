@@ -26,7 +26,7 @@
                 <![endif]-->
     </head>
     <body ng-controller="pessoaCtrl as vm">
-{{vm.form.pessoa}}        {{vm.msg}}
+    {{vm.form.pessoa}}
         <div class="row">
 
             <div class='col-md-12'>
@@ -36,7 +36,10 @@
                 <input type="text" ng-model='vm.form.pessoa.DATA_NASCIMENTO' placeholder="Digite o DATA_NASCIMENTO">
                 <input type="text" ng-model='vm.form.pessoa.LOGIN_CODIGO' placeholder="Digite o LOGIN_CODIGO">
 
-                <button class="btn btn-info" ng-click='vm.savePessoa( vm.form.pessoa.NOME,vm.form.pessoa.CPF, vm.form.pessoa.DATA_NASCIMENTO, vm.form.pessoa.LOGIN_CODIGO)'>Salvar</button>
+                <!-- <button class="btn btn-info" ng-click='vm.savePessoa( vm.form.pessoa.NOME,vm.form.pessoa.CPF, vm.form.pessoa.DATA_NASCIMENTO, vm.form.pessoa.LOGIN_CODIGO)'>Salvar</button> -->
+                <!-- <button class="btn btn-info" ng-click='vm.savePessoa(vm.form.pessoa)'>Salvar</button> -->
+                <button class="btn btn-info" ng-click='vm.savePessoa(vm.form.pessoa)'>Salvar</button>
+                <button class="btn btn-danger" ng-click='vm.deletePessoa(vm.form.pessoa)'>Deletar</button>
             </div>
 
 

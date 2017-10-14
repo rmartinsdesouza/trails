@@ -33,50 +33,24 @@
 			vm.form.pessoa = angular.copy(item);
 		}
 
-		vm.savePessoa = function(NOME,CPF,DATA_NASCIMENTO,LOGIN_CODIGO){
-			// console.log('Pessoa salva.', vm.form.pessoa)
-			// try {
-			// 	pessoaSvc.savePessoa().then(function(result){
-					
+		vm.savePessoa = function(item){
+			
+			try {
+				pessoaSvc.savePessoa(item).then(function(result){
+			
+				// vm.savePessoa = angular.copy(result.data);
 
-			// 	});
-			// }
-			// catch(err) {
-			// 	getListPessoa();
-			// }	
-			// $scope.DESCRICAO = null;
-			$scope.NOME = null;
-			$scope.CPF = null;
-			$scope.DATA_NASCIMENTO = null;
-			$scope.LOGIN_CODIGO = null;
+				});
+			}
+			catch(err) {
+				getListPessoa();
+			}
+		}
 
-		var data = {
-		// DESCRICAO: DESCRICAO
-		
-			NOME: NOME,
-			CPF: CPF,
-			DATA_NASCIMENTO: DATA_NASCIMENTO,
-			LOGIN_CODIGO: LOGIN_CODIGO
+		vm.deletePessoa = function(item){
+			
+			pessoaSvc.deletePessoa(item);
 
-			// NOME: 'NOME',
-			// CPF: 'CPF',
-			// DATA_NASCIMENTO: 'DATA_NASCIMENTO',
-			// LOGIN_CODIGO: 'LOGIN_CODIGO'
-		};
-	
-		$http.post('http://bedrock/api/pessoa', data).then(function (response, $http) {
-
-
-		if (response.data)
-			$scope.msg = "Post Data Submitted Successfully!";
-			getListPessoa();
-		}, function (response) {		
-			$scope.msg = "Service not Exists";
-			$scope.statusval = response.status;
-			$scope.statustext = response.statusText;
-			// $scope.headers = response.headers();
-		});
-		
 		}
 
 		getListPessoa();

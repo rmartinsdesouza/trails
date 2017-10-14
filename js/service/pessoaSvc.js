@@ -20,11 +20,16 @@
 			return $http.post(utilService.getUrlDAO('api/pessoa'), data);
 		};
 
-		svc.deletePessoa = function(data) {
-			// console.log(data)
-			return $http.delete(utilService.getUrlDAO('api/pessoa/delete/') + data.CODIGO).then(function (status) {
-	        return status.data;
-	    	});
+		svc.deletePessoa = function(id) {
+
+			var config = {
+                headers : {
+                    'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8;'
+                }
+            }
+
+			console.log(id)
+			return $http.delete(utilService.getUrlDAO('api/pessoa/delete/')+ id, config);
 		};
 		      
 

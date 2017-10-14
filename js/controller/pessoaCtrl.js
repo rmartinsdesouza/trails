@@ -48,8 +48,8 @@
 		}
 
 		vm.deletePessoa = function(item){
-			
-			pessoaSvc.deletePessoa(item);
+			// console.log(item);
+			pessoaSvc.deletePessoa(item.CODIGO);
 
 		}
 
